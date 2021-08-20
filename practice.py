@@ -1,6 +1,9 @@
 from bs4 import BeautifulSoup
 import requests
 
+# Prints welcome message
+print("Welcome to a basic web scraper!")
+
 # Start the session
 session = requests.Session()
 
@@ -24,4 +27,3 @@ for card_element in card_elements:
     # card_image_element = card_element.find("a", class_ = "image")
     print(title_element.text.strip())
     # print(card_image_element)
-    print()
